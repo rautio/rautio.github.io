@@ -1,0 +1,61 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+@media(max-height: 350px){
+    .middle {
+        visibility: hidden;
+    }
+}
+
+.bgimg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.25)), url('images/bg.jpg');
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    overflow: hidden;
+    white-space:nowrap;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 25px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background: white;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
